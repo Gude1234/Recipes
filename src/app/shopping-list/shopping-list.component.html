@@ -1,0 +1,21 @@
+<div class="col-xs-10">
+    <div class="list-group-item" style="border-radius: 10px;">
+        <div class="row">
+            <div class="col-xs-8">
+                <app-shopping-edit></app-shopping-edit>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-xs-6">
+                <ul class="list-group">
+                    <a class="list-group-item" style="cursor: pointer;" *ngFor="let ingredientitem of ingredients; let i =index" (click)="onselectingredient(i)">
+                        {{ ingredientitem.name }} ({{ ingredientitem.amount }})
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
